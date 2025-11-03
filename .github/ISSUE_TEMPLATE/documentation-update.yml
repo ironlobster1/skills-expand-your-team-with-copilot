@@ -1,0 +1,80 @@
+name: Documentation Update
+description: Request updates or improvements to documentation
+title: "[Docs]: "
+labels: ["documentation", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Documentation Update
+        Use this form to request updates, corrections, or improvements to project documentation.
+        
+  - type: dropdown
+    id: doc-type
+    attributes:
+      label: Documentation Type
+      description: What type of documentation needs updating?
+      options:
+        - README file
+        - Code comments
+        - API documentation
+        - Setup/Installation guide
+        - User guide
+        - Developer guide
+        - Other
+    validations:
+      required: true
+      
+  - type: textarea
+    id: doc-location
+    attributes:
+      label: Documentation Location
+      description: Where is the documentation that needs updating?
+      placeholder: |
+        Provide the file path or URL:
+        e.g., /src/README.md, /docs/setup.md, etc.
+    validations:
+      required: true
+      
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: What's wrong or missing?
+      description: Describe the problem with the current documentation
+      placeholder: |
+        - Information is outdated
+        - Missing important details
+        - Contains errors
+        - Unclear or confusing
+        - Needs additional examples
+    validations:
+      required: true
+      
+  - type: textarea
+    id: suggested-content
+    attributes:
+      label: Suggested Content
+      description: What should the documentation say instead? Provide specific content if possible.
+      placeholder: Write the corrected or new documentation content here
+    validations:
+      required: true
+      
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Why is this update important? Who will benefit from it?
+      placeholder: Explain why this documentation change is needed and who it will help
+    validations:
+      required: false
+      
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### Acceptance Criteria
+        This documentation update will be complete when:
+        - ✅ The documentation accurately reflects the current state of the system
+        - ✅ Information is clear and easy to understand
+        - ✅ No broken links or references
+        - ✅ Follows the project's documentation style

@@ -1,0 +1,94 @@
+name: Add New Activity
+description: Request to add a new extracurricular activity to the system
+title: "[Activity]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Add a New Activity
+        Use this form to request adding a new extracurricular activity to Mergington High School's system.
+        
+  - type: input
+    id: activity-name
+    attributes:
+      label: Activity Name
+      description: What is the name of the new activity?
+      placeholder: e.g., Manga Maniacs, Chess Club, Robotics Team
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Activity Description
+      description: Provide a detailed description of the activity
+      placeholder: Explain what the activity is about, what students will do, and what they can expect to learn or experience
+    validations:
+      required: true
+      
+  - type: input
+    id: schedule
+    attributes:
+      label: Schedule
+      description: When does this activity meet?
+      placeholder: e.g., Mondays at 3pm, Tuesdays and Thursdays at 4pm
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: What category does this activity fall under?
+      options:
+        - Sports
+        - Arts
+        - Academic
+        - Technology
+        - Community Service
+        - Other
+    validations:
+      required: true
+      
+  - type: input
+    id: max-attendance
+    attributes:
+      label: Maximum Attendance
+      description: What is the maximum number of students who can participate?
+      placeholder: e.g., 15, 30, 50
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty Level
+      description: Is this activity targeted at a specific skill level? (Optional)
+      options:
+        - All Levels
+        - Beginner
+        - Intermediate
+        - Advanced
+    validations:
+      required: false
+      
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other relevant information about this activity?
+      placeholder: Special requirements, prerequisites, equipment needed, faculty advisor, etc.
+    validations:
+      required: false
+      
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### Acceptance Criteria
+        The activity should be:
+        - ✅ Added to the database with all required fields
+        - ✅ Visible on the activities page
+        - ✅ Available for students to sign up for
+        - ✅ Properly categorized and filterable

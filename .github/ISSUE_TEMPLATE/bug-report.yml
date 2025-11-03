@@ -1,0 +1,119 @@
+name: Bug Report
+description: Report a bug or issue with the application
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Bug Report
+        Use this form to report bugs or issues with the Mergington High School Activities system.
+        
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug Description
+      description: What is going wrong? Provide a clear and concise description of the bug.
+      placeholder: Describe what's broken or not working as expected
+    validations:
+      required: true
+      
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What should be happening instead?
+      placeholder: Describe what you expected to happen
+    validations:
+      required: true
+      
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current Behavior
+      description: What is actually happening?
+      placeholder: Describe what is currently happening (the buggy behavior)
+    validations:
+      required: true
+      
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this bug?
+      placeholder: |
+        1. Go to...
+        2. Click on...
+        3. Scroll to...
+        4. See error...
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: affected-area
+    attributes:
+      label: Affected Area
+      description: Which part of the application is affected?
+      options:
+        - Activities List/Display
+        - Activity Sign-up
+        - Filtering/Searching
+        - User Interface/Styling
+        - Backend/API
+        - Database
+        - Other
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How severe is this bug?
+      options:
+        - Critical - System is broken or unusable
+        - High - Major functionality is impaired
+        - Medium - Feature works but has issues
+        - Low - Minor cosmetic or usability issue
+    validations:
+      required: true
+      
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Where are you seeing this issue?
+      placeholder: |
+        - Browser: Chrome/Firefox/Safari/Edge
+        - Operating System: Windows/Mac/Linux
+        - Screen size: Desktop/Tablet/Mobile
+    validations:
+      required: false
+      
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: Suggested Fix
+      description: Do you have any ideas on how to fix this bug?
+      placeholder: If you have technical knowledge about what might be causing this, share your insights here
+    validations:
+      required: false
+      
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other information that might help?
+      placeholder: Screenshots, error messages, console logs, etc.
+    validations:
+      required: false
+      
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### Resolution Criteria
+        This bug will be considered fixed when:
+        - ✅ The expected behavior is restored
+        - ✅ The issue can no longer be reproduced
+        - ✅ No new issues are introduced by the fix
