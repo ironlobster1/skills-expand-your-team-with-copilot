@@ -65,10 +65,12 @@ body:
       description: Provide specific values (colors, sizes, spacing, etc.)
       placeholder: |
         For example:
-        - Primary color: #ffffff (white)
-        - Secondary color: #00ff00 (lime green)
-        - Background: light gray (#f5f5f5)
+        - Primary color: #00ff00 (lime green)
+        - Secondary color: #ffffff (white)
+        - Background: #1a1a1a (dark gray)
+        - Text color: #ffffff (white for contrast)
         - Logo/mascot from: https://octodex.github.com/
+        Note: Ensure color combinations meet WCAG accessibility standards
     validations:
       required: false
 

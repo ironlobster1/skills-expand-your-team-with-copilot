@@ -107,7 +107,7 @@ Issue templates help you provide all the necessary information for changes to be
 
 ### Be Specific
 ❌ Bad: "Make it look better"
-✅ Good: "Change the primary color to lime green (#00ff00) and add the Octocat mascot from octodex.github.com"
+✅ Good: "Change the primary color to lime green (#00ff00) with dark background (#1a1a1a) for contrast, and add the Octocat mascot from octodex.github.com"
 
 ### Include Examples
 ❌ Bad: "The schedule is wrong"
