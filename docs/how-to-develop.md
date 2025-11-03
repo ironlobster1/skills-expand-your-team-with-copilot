@@ -1,5 +1,13 @@
 # Development Guide
 
+## GitHub Copilot Coding Agent
+
+If you're looking for information about using GitHub Copilot coding agent (assigning issues to @copilot), please see the [GitHub Copilot Coding Agent Guide](./github-copilot-coding-agent-guide.md).
+
+**Quick answer**: You can use Copilot coding agent entirely through GitHub.com - no code editor or extensions required!
+
+---
+
 ## Initial Setup
 
 This project is best developed using GitHub Codespaces, which provides a consistent development environment with all the necessary tools pre-configured.
