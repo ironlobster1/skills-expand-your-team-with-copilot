@@ -1,0 +1,64 @@
+name: Bug Report
+description: Report a problem or issue with the school activity system
+title: "[Bug]: "
+labels: ["bug"]
+assignees:
+  - copilot
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this issue! Please fill out the information below to help us understand and fix the problem.
+
+  - type: textarea
+    id: problem-description
+    attributes:
+      label: Problem Description
+      description: What is going wrong? Be as specific as possible.
+      placeholder: For example, "The website colors don't match our school colors" or "Students can't register for activities on Tuesdays"
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What should happen instead?
+      placeholder: Describe what you expect to see or what should work correctly
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: How can we see this problem happen?
+      placeholder: |
+        1. Go to the activities page
+        2. Click on "Sports" filter
+        3. Notice that...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: affected-area
+    attributes:
+      label: What part of the system is affected?
+      options:
+        - Activity listing/cards
+        - Filters and search
+        - Student registration
+        - Visual design/colors
+        - Navigation/menu
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other information that might help (screenshots, error messages, browser information, etc.)
+      placeholder: Add any other context, screenshots, or examples here
+    validations:
+      required: false

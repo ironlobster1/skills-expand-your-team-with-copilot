@@ -1,0 +1,70 @@
+name: Documentation Update
+description: Update or improve documentation, README files, or help text
+title: "[Docs]: "
+labels: ["documentation"]
+assignees:
+  - copilot
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us keep documentation accurate and useful! Use this template for README updates, help text, or any written content.
+
+  - type: dropdown
+    id: doc-type
+    attributes:
+      label: What type of documentation needs updating?
+      options:
+        - README file
+        - Code comments
+        - User guide
+        - Help text in the application
+        - API documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: doc-location
+    attributes:
+      label: Documentation Location
+      description: Where is the documentation that needs updating?
+      placeholder: For example, "README.md in the src folder" or "Help text on the registration page"
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: What's wrong with the current documentation?
+      description: Describe what's outdated, incorrect, missing, or unclear
+      placeholder: For example, "The README says we only have 5 activities but we now have 12" or "Instructions for registration are missing"
+    validations:
+      required: true
+
+  - type: textarea
+    id: desired-content
+    attributes:
+      label: What should it say instead?
+      description: Provide the correct or updated information
+      placeholder: Describe what the documentation should contain, or provide the exact text if you have it
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-sections
+    attributes:
+      label: Additional Sections Needed
+      description: Are there any new sections or topics that should be added? (Optional)
+      placeholder: List any new sections that should be added to make the documentation more complete
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Any other information that would help update the documentation (Optional)
+      placeholder: Links to related documentation, screenshots, or examples
+    validations:
+      required: false
