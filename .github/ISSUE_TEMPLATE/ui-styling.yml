@@ -1,0 +1,92 @@
+name: UI/Styling Change
+description: Request changes to the visual design, colors, or styling
+title: "[UI]: "
+labels: ["enhancement", "ui"]
+assignees:
+  - copilot
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Request changes to how things look! This includes colors, fonts, layout, animations, and visual design.
+
+  - type: textarea
+    id: design-request
+    attributes:
+      label: Design Change Request
+      description: What visual changes would you like to see?
+      placeholder: For example, "Change website colors to match school colors" or "Add dark mode toggle"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-state
+    attributes:
+      label: Current State
+      description: What does it look like now?
+      placeholder: Describe the current appearance that needs to change
+    validations:
+      required: true
+
+  - type: textarea
+    id: desired-state
+    attributes:
+      label: Desired State
+      description: What should it look like after the change?
+      placeholder: |
+        Be specific about:
+        - Colors (provide hex codes if possible, e.g., #00ff00 for lime green)
+        - Layout changes
+        - Animation requirements
+        - Font or size changes
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ui-component
+    attributes:
+      label: What UI component needs updating?
+      options:
+        - Colors/theme
+        - Layout/spacing
+        - Buttons or controls
+        - Text and fonts
+        - Images or icons
+        - Animations
+        - Overall page design
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: design-specs
+    attributes:
+      label: Design Specifications
+      description: Provide specific values (colors, sizes, spacing, etc.)
+      placeholder: |
+        For example:
+        - Primary color: #ffffff (white)
+        - Secondary color: #00ff00 (lime green)
+        - Background: light gray (#f5f5f5)
+        - Logo/mascot from: https://octodex.github.com/
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: responsive-design
+    attributes:
+      label: Responsive Design
+      description: Should this work on all screen sizes?
+      options:
+        - label: This should work on mobile devices
+        - label: This should work on tablets
+        - label: This should work on desktop computers
+
+  - type: textarea
+    id: visual-examples
+    attributes:
+      label: Visual Examples
+      description: Add screenshots, mockups, or links to examples (Optional)
+      placeholder: Upload images or provide links showing what you're looking for
+    validations:
+      required: false

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General Question or Discussion
+    url: https://github.com/ironlobster1/skills-expand-your-team-with-copilot/discussions
+    about: For questions or discussions that don't fit a specific template
+  - name: GitHub Copilot Documentation
+    url: https://docs.github.com/en/copilot
+    about: Learn more about GitHub Copilot features and capabilities

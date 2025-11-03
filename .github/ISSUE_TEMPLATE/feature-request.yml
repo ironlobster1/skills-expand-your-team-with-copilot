@@ -1,0 +1,73 @@
+name: Feature Request
+description: Request a new feature or capability for the activity system
+title: "[Feature]: "
+labels: ["enhancement"]
+assignees:
+  - copilot
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please provide detailed information to help us understand and implement your idea.
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: What new feature or capability would you like to add?
+      placeholder: For example, "Add difficulty levels for activities" or "Create a calendar view for the activities"
+    validations:
+      required: true
+
+  - type: textarea
+    id: why-needed
+    attributes:
+      label: Why is this needed?
+      description: What problem does this solve? Who will benefit from this feature?
+      placeholder: Explain the need or problem this feature addresses, such as "Students need to see which activities match their skill level"
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: How will we know when this feature is complete? What should it do?
+      placeholder: |
+        - Students can filter activities by difficulty level
+        - Difficulty levels include: Beginner, Intermediate, Advanced
+        - Activities without a difficulty level should work as before
+    validations:
+      required: true
+
+  - type: dropdown
+    id: feature-area
+    attributes:
+      label: Which area does this feature affect?
+      options:
+        - Activity listing/display
+        - Filtering and search
+        - Student registration system
+        - Navigation and views
+        - Data management
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-implementation
+    attributes:
+      label: Suggested Implementation
+      description: Do you have any ideas for how this could be built? (Optional but helpful!)
+      placeholder: For example, "Add a dropdown in the sidebar with difficulty options" or "Add a toggle button in the header"
+    validations:
+      required: false
+
+  - type: textarea
+    id: examples-references
+    attributes:
+      label: Examples or References
+      description: Any examples from other systems or sketches of what you're imagining? (Optional)
+      placeholder: Add links, screenshots, or descriptions of similar features you've seen elsewhere
+    validations:
+      required: false

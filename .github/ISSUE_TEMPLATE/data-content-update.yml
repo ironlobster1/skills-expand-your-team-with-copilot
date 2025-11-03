@@ -1,0 +1,89 @@
+name: Data/Content Update
+description: Update activity information, student data, or other content
+title: "[Data]: "
+labels: ["content", "data"]
+assignees:
+  - copilot
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to request updates to activities, schedules, or other content in the system.
+
+  - type: dropdown
+    id: update-type
+    attributes:
+      label: What type of content needs updating?
+      options:
+        - Activity information
+        - Schedule/times
+        - Student data
+        - Teacher/coach information
+        - Activity categories
+        - Sample/test data
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-content
+    attributes:
+      label: Current Content
+      description: What content currently exists that needs to change?
+      placeholder: For example, "Chess Club meets on Tuesday" or "Soccer is listed as an Arts activity"
+    validations:
+      required: true
+
+  - type: textarea
+    id: required-changes
+    attributes:
+      label: Required Changes
+      description: What should the content be updated to?
+      placeholder: |
+        Be specific:
+        - New activity name
+        - Updated schedule
+        - Correct category
+        - New description
+        - etc.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: How urgent is this update?
+      options:
+        - Critical - Affects registration or safety
+        - High - Incorrect information visible to students
+        - Medium - Would be good to fix soon
+        - Low - Nice to have when possible
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected-records
+    attributes:
+      label: Which specific records are affected?
+      description: List specific activities, students, or records that need updating (Optional)
+      placeholder: 'For example, "Chess Club (activity ID: 5)" or "All activities in the Sports category"'
+    validations:
+      required: false
+
+  - type: textarea
+    id: data-source
+    attributes:
+      label: Source of Correct Information
+      description: Where does this updated information come from? (Optional)
+      placeholder: For example, "Updated schedule from principal's office" or "Coach's email dated 3/15"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: Any other relevant information (Optional)
+      placeholder: Add any context that might be helpful
+    validations:
+      required: false
